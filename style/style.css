@@ -1,0 +1,84 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 255, 255);
+  text-shadow:   rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+  font-weight: bold;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track { /* "::-webkit-slider-runnable-track" para customizar o "trilho" do campo. */
+  width: 100%;
+  height: 10px;
+  border-radius: 20px;
+  background: #d8d8d8;
+  box-shadow: 0px 1px 4px 1px black;
+  vertical-align: unset;
+}
+
+input[type='range']::-webkit-slider-thumb { /* "::-webkit-slider-thumb" para customizar o "seletor" do campo. */
+  width: 20px;
+  height: 20px;
+  margin-top: -4.8px;
+  border-radius: 4px;
+  border-style: groove;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+}
+
+input[type='range']::-webkit-slider-thumb:hover{
+  border-style: solid;
+  border-width: 2px;
+  border-color: yellow;
+  cursor: pointer;
+}
+
+input[type='range'][class='red']::-webkit-slider-thumb {
+  background-color: red;
+}
+input[type='range'][class='red']::-webkit-slider-thumb:hover{
+  background-color: darkred;
+}
+input[type='range'][class='green']::-webkit-slider-thumb {
+  background-color: green;
+}
+input[type='range'][class='green']::-webkit-slider-thumb:hover {
+  background-color: darkgreen;
+}
+input[type='range'][class='blue']::-webkit-slider-thumb {
+  background-color: blue;
+}
+input[type='range'][class='blue']::-webkit-slider-thumb:hover {
+  background-color: darkblue;
+}
+
+#color {
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(0, 0, 0);
+  height: 150px;
+  width: 280px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px 1px 4px 1px black;
+}
+.container{
+  display: flex;
+  justify-content: center;
+}
+h1{
+  margin-top: 20px;  
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.form-container{
+  padding-left: 20px;
+}
