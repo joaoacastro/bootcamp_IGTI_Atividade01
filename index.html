@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>.:RGB:.</title>
+  </head>
+  <body>
+    <div class="container">
+    
+      <h1>RGB</h1>
+      
+      <div class="form-container">
+        <label>(R) Red:</label>
+        <input type="range" id="inputRangeRed" class="red" name="red" min="0" max="255" value="0">
+        <input
+          class="span"
+          type="text"
+          id="spanRed"
+          value="0"
+          size="4"
+          disabled
+        />
+        <br>
+        <label>(G) Green:</label>
+        <input type="range" id="inputRangeGreen" class="green" name="green" min="0" max="255" value ="0">
+        <input
+          class="span"
+          type="text"
+          id="spanGreen"
+          value="0"
+          size="4"
+          disabled
+        />
+        <br>
+        <label>(B) Blue:</label>
+        <input type="range" id="inputRangeBlue" class="blue" name="blue" min="0" max="255" value ="0">
+        <input
+          class="span"
+          type="text"
+          id="spanBlue"
+          value="0"
+          size="4"
+          disabled
+        />
+      </div>
+      <div id="color"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

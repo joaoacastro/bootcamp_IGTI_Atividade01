@@ -1,0 +1,70 @@
+body{
+  font-family: 'Courier New', Courier, monospace;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track { /* "::-webkit-slider-runnable-track" para customizar o "trilho" do campo. */
+  width: 200px;
+  height: 10px;
+  border-radius: 20px;
+  background: #d8d8d8;
+  box-shadow: 0px 1px 4px 1px black;
+  margin-left: 10px;
+  vertical-align: unset;
+}
+
+input[type='range']::-webkit-slider-thumb { /* "::-webkit-slider-thumb" para customizar o "seletor" do campo. */
+  width: 20px;
+  height: 20px;
+  margin-top: -4.5px;
+  border-radius: 60px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+input[type='range']::-webkit-slider-thumb:hover{
+  border-style: solid;
+  border-width: 2px;
+  border-color: yellow;
+  cursor: pointer;
+}
+
+input[type='range'][class='red']::-webkit-slider-thumb {
+  background-color: red;
+}
+input[type='range'][class='red']::-webkit-slider-thumb:hover{
+  background-color: darkred;
+}
+input[type='range'][class='green']::-webkit-slider-thumb {
+  background-color: green;
+}
+input[type='range'][class='green']::-webkit-slider-thumb:hover {
+  background-color: darkgreen;
+}
+input[type='range'][class='blue']::-webkit-slider-thumb {
+  background-color: blue;
+}
+input[type='range'][class='blue']::-webkit-slider-thumb:hover {
+  background-color: darkblue;
+}
+
+#color {
+  margin-top: 20px;
+  border-radius: 20px;
+  height: 100px;
+  width: 100px;
+  background-color: rgb(0, 0, 0);
+}
+h1{
+  margin-top: 20px;  
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
